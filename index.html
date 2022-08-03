@@ -1,0 +1,853 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 1: Include in HTML -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- flickity cdn  -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Ageless Multi-Collagen® Protein Powder</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: "Lato", "HelveticaNeue", "Helvetica Neue", sans-serif;
+      box-sizing: border-box;
+    }
+
+    .sideReviews {
+      /* display: none; */
+      transform: rotate(-90deg);
+      background-color: rgb(13, 79, 154);
+      color: white;
+      position: fixed;
+      top: 20rem;
+      left: -33px;
+      height: 55px;
+      width: 120px;
+      padding: 8px 5px;
+      z-index: 999;
+
+    }
+
+    .carousel-cell {
+      width: 28%;
+      height: 200px;
+      margin-right: 10px;
+    }
+
+
+    .carousel-cell:before {
+      display: block;
+    }
+
+    .team_img {
+      position: absolute;
+      top: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: #fff;
+    }
+
+    .team_img img {
+      width: 55px;
+      height: 55px;
+      padding: 0px;
+    }
+
+    a#navbarDropdown {
+      letter-spacing: 1.5px;
+      text-shadow: unset;
+      font-weight: 500;
+    }
+
+    a.nav-link.text-white {
+      text-shadow: unset;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+    }
+
+    .flickity-page-dots {
+      display: none;
+    }
+
+    .d-md-flex.d-none.bg-white.text-center.text-white {
+      margin: 2px;
+    }
+
+
+    #Popular-offer-div {
+      text-align: center;
+      width: 100%;
+    }
+
+    #three-divs {
+      align-items: center;
+    }
+
+    .qMarkDiv {
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      background-color: #2BB34D;
+      color: white;
+      position: absolute;
+      top: -12px;
+      right: -6px;
+      top: -15px;
+    }
+
+    .navbar-dark .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width=' 2' stroke-linecap=' round' stroke-miterlimit=' 10' d=' M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+
+    }
+
+    a.d-block.nav-link.text-white {
+      padding: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <!-- Section -->
+  <section class="text-white container-fluid px-4 text" style="background-color: rgb(13, 79, 154)">
+    <div class="d-flex">
+
+
+      <!-- icon with quote -->
+      <div class="col-6 pt-1 d-none d-lg-flex">
+        <span> <img src="download" height="35" width="35" alt="Family-icon">
+          <a href="#"
+            style="letter-spacing: 1.5px; text-shadow: unset; font-size: 1.1rem; text-transform: uppercase; text-decoration: none; font-weight: 500; color: #fff;">Every
+            Order feeds a child</a>
+        </span>
+      </div>
+
+      <!-- phone div  -->
+      <div class="col-6 pt-1 d-lg-none d-md-flex d-none">
+        <span> <img src="phone" height="30" width="30" alt="Family-icon">
+          <a href="tel:18007665086"
+            style="letter-spacing: 1.5px; text-shadow: unset; font-size: 1.1rem; text-transform: uppercase; text-decoration: none; font-weight: 500; color: #fff;">
+            800-766-5086</a>
+        </span>
+      </div>
+
+      <div class="col-6 pt-1 d-md-none d-flex">
+        <span> <img src="phone" height="20" width="20" alt="Family-icon">
+          <a href="tel:18007665086"
+            style="letter-spacing: 1.5px; text-shadow: unset; font-size: 11px; text-transform: uppercase; text-decoration: none; font-weight: 500; color: #fff;">
+            800-766-5086</a>
+        </span>
+      </div>
+
+
+
+
+      <div class="col-6 d-md-flex d-none justify-content-end">
+        <div class="dropdown" style="letter-spacing: 1.5; text-shadow: unset">
+          <a class="nav-link dropdown-toggle text-white pt-2" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="download1" alt="user-icon" height="20" width="23" class="me-1" /> My Account
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Purchase History</a></li>
+            <li><a class="dropdown-item" href="#">Manage Subscription</a></li>
+            <li><a class="dropdown-item" href="#">Track My Order</a></li>
+            <li><a class="dropdown-item" href="#">Forgot Password</a></li>
+            <li><a class="dropdown-item" href="#">Create Account</a></li>
+            <li><a class="dropdown-item" href="#">Customer Support</a></li>
+            <li><a class="dropdown-item" href="#">Log In</a></li>
+          </ul>
+
+        </div>
+        <div class="d-md-flex d-none">
+          <a href="#" class="nav-link text-white"><img src="cart.png" alt="cart-icon" height="30" width="30" />
+            My Cart (0)</a>
+        </div>
+
+        <div class="d-md-none d-flex">
+          <a href="#" class="nav-link text-white"><img src="cart.png" alt="cart-icon" height="30" width="30" />
+            (0)</a>
+        </div>
+
+      </div>
+
+
+
+      <div class="col-6 d-md-none d-flex justify-content-end">
+        <div class="dropdown" style="letter-spacing: 1px;">
+          <a class="nav-link dropdown-toggle text-white pt-2" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 11px;">
+            <img src="download1" alt="user-icon" height="15" width="18" /> My Account
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Purchase History</a></li>
+            <li><a class="dropdown-item" href="#">Manage Subscription</a></li>
+            <li><a class="dropdown-item" href="#">Track My Order</a></li>
+            <li><a class="dropdown-item" href="#">Forgot Password</a></li>
+            <li><a class="dropdown-item" href="#">Create Account</a></li>
+            <li><a class="dropdown-item" href="#">Customer Support</a></li>
+            <li><a class="dropdown-item" href="#">Log In</a></li>
+          </ul>
+
+        </div>
+        <div class="d-md-flex d-none">
+          <a href="#" class="d-block nav-link text-white pe-1" style="font-size: 11px;"><img src="cart.png" alt="cart-icon"
+              height="20" width="20" />
+            My Cart (0)</a>
+        </div>
+
+        <div class="d-md-none d-flex" style="font-size: 11px;">
+          <a href="#" class="d-block nav-link text-white pe-1"><img src="cart.png" alt="cart-icon" height="20"
+              width="20" />(0)</a>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+  </section>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light d-flex bg-white text-primary px-5 justify-content-between"
+    style="background-image: url(background.png);">
+
+    <div class="col-lg-3 col-6 d-flex">
+      <a href="#" class="navbar-brand">
+        <img class="img-fluid"
+          src="https://cdn.shopify.com/s/files/1/2451/8571/files/naturally-honest_17db4633-28cd-4781-a2ee-178143d75147_360x.png?v=1568749265"
+          alt="Logo Image" />
+      </a>
+    </div>
+
+
+
+    <div class="navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu"
+        aria-controls="navbarnav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+
+      <div class="collapse navbar-collapse col-lg-6 d-lg-flex py-4" id="navMenu">
+
+        <ul class="navbar-nav">
+          <li>
+            <button class="button dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false"
+              style="height: 45px; width: 90px;border-radius: 5px; background-color: rgb(13, 79, 154);">
+              <b>SHOP</b>
+            </button>
+
+            <div class="dropdown-menu text-primary" id="navbarDropdown">
+              <a class="dropdown-item" href="#">ALL PRODUCTS</a>
+              <a class="dropdown-item" href="#">PROTIENS</a>
+              <a class="dropdown-item" href="#">COLLAGEN PROTIEN</a>
+              <a class="dropdown-item" href="#">IMMUNE SUPPORT</a>
+              <a class="dropdown-item" href="#">HEALTHY LIVING</a>
+              <a class="dropdown-item" href="#">DIGESTIVE HEALTH</a>
+              <a class="dropdown-item" href="#">ANTI-AGING</a>
+              <a class="dropdown-item" href="#">GEAR</a>
+            </div>
+          </li>
+
+          <li>
+            <a href="#" class="nav-link" style="color:  rgb(13, 79, 154);"><b>QUALITY</b></a>
+          </li>
+
+          <li>
+            <a href="#" class="nav-link" style="color:  rgb(13, 79, 154);"><b>MISSION</b></a>
+          </li>
+          <li>
+            <a href="#" class="nav-link" style="color:  rgb(13, 79, 154);"><b>#BIOTRUST</b></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="col-lg-3 d-lg-block d-none text-center">
+
+
+      <span class="d-flex"><a href="#" class="nav-link" style="color:  rgb(13, 79, 154);"><i
+            class="fa-solid fa-phone"></i>
+          <b style="color: #2BB34D;">CALL US: 800-766-5086</b> </a><a href="#" class="nav-link"
+          style="color:  rgb(13, 79, 154);"><i class="fa-solid fa-envelope"></i> <b style="color: #2BB34D;">CONTACT
+            US</b></a>
+      </span>
+
+      <div class="input-group rounded">
+        <input type="search" class="form-control rounded" placeholder="Search all products..."
+          aria-label="Search all products..." aria-describedby="search-addon" />
+        <span class="input-group-text border-1" id="search-addon">
+          <i class="fas fa-search"></i>
+        </span>
+      </div>
+
+
+
+    </div>
+
+
+  </nav>
+
+
+  <!-- horizontal line -->
+  <div class="container-fluid" style="background-color:rgb(13, 79, 154); padding: 2px;">
+  </div>
+
+
+  <!-- main-content -->
+
+  <div class="sideReviews">
+    <a href="#" class="nav-link d-flex text-white"><i class="fa-regular fa-star"></i>Reviews</a>
+  </div>
+
+  <div class="container-fluid py-2 px-1 bg-white text-white">
+
+
+    <!-- Home Collagen Link -->
+    <div class="d-flex container-fluid bg-white" style="color: #3c7aae;">
+      <a href="#" class="nav-link" style="color: #3c7aae; padding: 3px; font-weight: 500;">HOME</a>›<a href="#"
+        class="nav-link" style="color: #3c7aae; font-weight: 500; padding: 3px;">COLLAGEN PROTEIN</a>
+    </div>
+
+    <!-- Side menu pics -->
+    <div class="d-md-flex d-block">
+      <div class="col-lg-1 d-none d-lg-block px-2 bg-white">
+
+        <div class="row p-2">
+          <a href="#">
+            <img
+              src="https://cdn.shopify.com/s/files/1/2451/8571/products/Unflavored-4-Delicious-Flavors_40x40@2x.png?v=1657121683"
+              alt="Protein Image">
+          </a>
+        </div>
+        <div class="row  p-2">
+          <a href="#">
+            <img
+              src="https://cdn.shopify.com/s/files/1/2451/8571/products/collagen-unflavored-5.17.21_40x40@2x.png?v=1657121683"
+              alt="Protein Image">
+          </a>
+        </div>
+        <div class="row  p-2">
+          <a href="#">
+            <img
+              src="https://cdn.shopify.com/s/files/1/2451/8571/products/collagen-flavors-vanilla_40x40@2x.png?v=1657121683"
+              alt="Protein Image">
+          </a>
+        </div>
+        <div class="row  p-2">
+          <a href="#">
+            <img
+              src="https://cdn.shopify.com/s/files/1/2451/8571/products/collagen-flavors-chocolate_40x40@2x.png?v=1657121683"
+              alt="Protein Image">
+          </a>
+        </div>
+        <div class="row  p-2">
+          <a href="#">
+            <img
+              src="https://cdn.shopify.com/s/files/1/2451/8571/products/ageless-beauty-collagen-PDP-new_40x40@2x.png?v=1657121683"
+              alt="Protein Image">
+          </a>
+        </div>
+
+        <div class="row  p-2">
+          <a href="#">
+            <img src="https://cdn.shopify.com/s/files/1/2451/8571/products/collagen-unf-sq_40x40@2x.png?v=1657121683"
+              alt="Protein Image">
+          </a>
+        </div>
+        <div class="row  p-2">
+          <a href="#">
+            <img
+              src="https://cdn.shopify.com/s/files/1/2451/8571/products/collagen-flavors-sfp-va-sq_40x40@2x.png?v=1657121683"
+              alt="Protein Image">
+          </a>
+        </div>
+        <div class="row  p-2">
+          <a href="#">
+            <img
+              src="https://cdn.shopify.com/s/files/1/2451/8571/products/collagen-flavors-sfp-cho-sq_40x40@2x.png?v=1657121683"
+              alt="Protein Image">
+          </a>
+        </div>
+        <div class="row  p-2">
+          <a href="#">
+            <img
+              src="https://cdn.shopify.com/s/files/1/2451/8571/products/collagen-flavors-sfp-fp-sq_40x40@2x.png?v=1657121683"
+              alt="Protein Image">
+          </a>
+        </div>
+        <div class="row  p-2">
+          <a href="#">
+            <img
+              src="https://cdn.shopify.com/s/files/1/2451/8571/products/thumbnail-square_6e8211ac-212d-4cbb-8607-940fdb15e9a4_40x40@2x.jpg?v=1657121683"
+              alt="Protein Image">
+          </a>
+        </div>
+      </div>
+
+
+      <!-- Big pic and heading -->
+      <div class="col-md-6 col-12 col-lg-5 d-block py-4 px-3 bg-white text-center">
+        <h3 style="font-weight: 700; color:rgb(13, 79, 154)">AGELESS MULTI-COLLAGEN® PROTEIN POWDER</h3>
+        <p><i class="fa-solid fa-star" style="color: #2BB34D;"></i>
+          <i class="fa-solid fa-star" style="color: #2BB34D;"></i>
+          <i class="fa-solid fa-star" style="color: #2BB34D;"></i>
+          <i class="fa-solid fa-star" style="color: #2BB34D;"></i>
+          <i class="fa-solid fa-star" style="color: #2BB34D;"></i>
+          <a href="#" class="nav-links" style="text-decoration: none;">2794 Reviews</a>
+        </p>
+
+        <div class="d-block" style="max-height: 530px; max-width: 530px; margin: auto;">
+          <img class="img-responsive img-fluid"
+            src="https://cdn.shopify.com/s/files/1/2451/8571/products/collagen-unflavored-5.17.21_1024x1024@2x.png?v=1657121683"
+            alt="Protien Image" height="530px" />
+        </div>
+
+        <div class="d-block w-auto">
+          <img class="img-resposive img-fluid"
+            src="https://cdn.shopify.com/s/files/1/2451/8571/t/3/assets/free-report-image-1546015359856-1555446388183.png"
+            alt="Footer image">
+        </div>
+
+
+      </div>
+
+
+
+
+      <!-- rightmost div  -->
+
+      <div class="col-md-6 col-12 d-block px-2 py-4 bg-white text-center">
+
+
+        <div class="d-block text-center">
+          <h4 class="text-center" style="color: #0D4F9A; font-weight: 700;">Choose Your Package</h4>
+          <div class="container-fluid my-2" style="color: black;">Select your money-saving option below:</div>
+
+          <div class="container-fluid d-flex">
+            <div class="flex-fill mx-2 my-2 h-1 p-3 "
+              style="background-color: #0D4F9A; border: 2px solid #0D4F9A; border-radius: 5px;">
+              One-Time Purchase
+            </div>
+            <div class="flex-fill mx-2 my-2 h-1 p-3"
+              style="color: #0D4F9A; border: 2px solid #0D4F9A; border-radius: 5px; position: relative;">
+              Subscribe & Save 36%
+              <div class="qMarkDiv">?</div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- 3 box div -->
+        <div class="d-block d-lg-flex container-fluid p-3 text-center" id="three-divs">
+
+
+          <div class="col-lg-4 d-lg-block d-none my-lg-0 my-1 p-lg-0 p-2" style="border: 2px solid #0D4F9A;">
+            <div class="d-lg-none d-flex p-3">
+              <img class="img-fluid"
+                src="https://cdn.shopify.com/s/files/1/2451/8571/t/3/assets/buy-1-1571245639778.png" alt="Protien"
+                style="max-width: 75px;" />
+            </div>
+            <div class="container-fluid pt-4 pb-5">
+              <h3 style="font-size: 34px;color: #0D4F9A;">1 Bag</h3>
+              <span class="mt-2 mb-5" style="color: #333333; font-size:36px">$49</span>
+
+            </div>
+            <div class="px-1 pb-2">
+              <button class="text-white border rounded mt-2 mx-3 mb-2"
+                style="background-color: #2BB34D; min-height: 40px;">CHOOSE
+                FLAVOR
+              </button>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 d-lg-none d-flex my-lg-0 my-1 p-lg-0 p-2"
+            style="border: 2px solid #0D4F9A; max-height: 120px;">
+            <div class="d-lg-none d-flex p-3">
+              <img class="img-fluid"
+                src="https://cdn.shopify.com/s/files/1/2451/8571/t/3/assets/buy-1-1571245639778.png" alt="Protien"
+                style="max-width: 75px;" />
+            </div>
+            <div class="container-fluid pt-1 text-start">
+              <h3 style="font-size: 21px;color: #0D4F9A;"><b>1 Bag</b></h3>
+              <span class="mt-0" style="color: #333333; font-size:21px"><b>$49</b></span>
+
+            </div>
+            <div class="text-center">
+              <button class="text-white border rounded mb-2" style="background-color: #2BB34D; min-height: 40px;">CHOOSE
+                FLAVORS
+              </button>
+              <strong style="font-size:14px; color: #0D4F9A; visibility: hidden;">Most Popular!</strong>
+
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 d-lg-block d-none my-lg-0 my-1 p-lg-0 p-2" style="border: 4px solid #0D4F9A;">
+            <div class="d-lg-block d-none" id="Popular-offer-div" style="background-color: #0D4F9A;">
+              <strong style="font-size: 20px;"> Most Popular</strong>
+            </div>
+            <div class="d-lg-none d-flex p-3">
+              <img class="img-fluid"
+                src="https://cdn.shopify.com/s/files/1/2451/8571/t/3/assets/buy-3-1571245639780.png" alt="protien"
+                style="max-width: 75px;" />
+            </div>
+            <div class="container-fluid pt-4 text-center">
+              <h3 class="m-0" style="font-size: 34px;color: #0D4F9A;">3 Bags</h3>
+              <p class="m-0" style="color: #2BB34D; font-size:30px">$35</p>
+              <p class="m-0" style="color: #2BB34D; font-size:30px">Per Bag</p>
+              <p class="m-0" style="color: #DB421E; font-size: 20px;">(Save 28%)</p>
+            </div>
+
+            <div class="px-1 pb-2">
+              <button class="text-white border rounded mb-2 mx-3"
+                style="background-color: #2BB34D; min-height: 40px;">CHOOSE FLAVORS</button>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 d-lg-none d-flex my-lg-0 my-1 p-lg-0 p-2"
+            style="border: 6px solid #2BB34D; max-height: 120px;">
+            <div class="d-lg-block d-none" id="Popular-offer-div" style="background-color: #0D4F9A;">
+              <strong style="font-size: 20px;"> Most Popular</strong>
+            </div>
+            <div class="d-lg-none d-flex p-3">
+              <img class="img-fluid"
+                src="https://cdn.shopify.com/s/files/1/2451/8571/t/3/assets/buy-3-1571245639780.png" alt="protien"
+                style="max-width: 75px;" />
+            </div>
+            <div class="container-fluid pt-1 text-start">
+              <h3 class="m-0" style="font-size: 21px;color: #0D4F9A;"><b>3 Bags</b></h3>
+              <p class="m-0" style="color: #2BB34D; font-size:21px"><b>$35 <span
+                    style="color: #2BB34D; font-size:13px">Per Bag</span></b></p>
+              <p class="m-0" style="color: #DB421E; font-size: 15x;"><b>(Save 28%)</b></p>
+            </div>
+
+            <div class="text-center">
+              <button class="text-white border rounded mb-2" style="background-color: #2BB34D; min-height: 40px;">CHOOSE
+                FLAVORS
+              </button>
+              <strong style="font-size:14px; color: #0D4F9A">Most Popular!</strong>
+
+            </div>
+          </div>
+
+
+
+
+
+          <div class="col-lg-4 d-lg-block d-none my-lg-0 my-1 p-lg-0 p-2" style="border: 2px solid #0D4F9A;">
+            <div class="d-lg-none d-flex p-3">
+              <img class="img-fluid"
+                src="https://cdn.shopify.com/s/files/1/2451/8571/t/3/assets/buy-6-1571245639782.png" alt="protien"
+                style="max-width: 75px;" />
+            </div>
+            <div class="container-fluid pt-4 text-center">
+              <h3 class="m-0" style="font-size: 34px;color: #0D4F9A;">6 Bags</h3>
+              <p class="m-0" style="color: #2BB34D; font-size:30px">$31</p>
+              <p class="m-0" style="color: #2BB34D; font-size:30px">Per Bag</p>
+              <p class="m-0" style="color: #DB421E; font-size: 20px;">(Save 36%)</p>
+            </div>
+
+            <div class="px-1 pb-2">
+              <button class="text-white border rounded mt-2 mx-3 mb-2"
+                style="background-color: #2BB34D; min-height: 40px;">CHOOSE
+                FLAVOR
+              </button>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 d-lg-none d-flex my-lg-0 my-1 p-lg-0 p-2"
+            style="border: 2px solid #0D4F9A; max-height: 120px;">
+            <div class="d-lg-none d-flex p-3">
+              <img class="img-fluid"
+                src="https://cdn.shopify.com/s/files/1/2451/8571/t/3/assets/buy-6-1571245639782.png" alt="protien"
+                style="max-width: 75px;" />
+            </div>
+            <div class="container-fluid pt-1 text-start">
+              <h3 class="m-0" style="font-size: 21px;color: #0D4F9A;"><b>6 Bags</b></h3>
+              <p class="m-0" style="color: #2BB34D; font-size:21px"><b>$31 <span
+                    style="color: #2BB34D; font-size:13px">Per Bag</span></b></p>
+              <p class="m-0" style="color: #DB421E; font-size: 15x;"><b>(Save 36%)</b></p>
+            </div>
+
+            <div class="text-center">
+              <button class="text-white border rounded mb-2" style="background-color: #2BB34D; min-height: 40px;">CHOOSE
+                FLAVORS
+              </button>
+              <strong style="font-size:14px; color: #0D4F9A; visibility: hidden;">Most Popular!</strong>
+
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+
+        <!-- crousel -->
+
+        <div class="container-fluid my-5 p-4 text-center" style="color: #0D4F9A">
+          <p style="font-size: 16px;"><strong>PHOTOS FROM THE #biotrust COMMUNITY</strong></p>
+
+          <div class="carousel p-4" data-flickity='{ "wrapAround": true}'>
+            <div class="carousel-cell">
+              <img class="w3-image"
+                src="https://cdn.shopify.com/s/files/1/2451/8571/products/collagen-flavors-chocolate_40x40@2x.png?v=1657121683">
+            </div>
+            <div class="carousel-cell">
+              <img class="w3-image"
+                src="https://cdn.shopify.com/s/files/1/2451/8571/products/ageless-beauty-collagen-PDP-new_40x40@2x.png?v=1657121683">
+            </div>
+            <div class="carousel-cell">
+              <img class="w3-image"
+                src="https://cdn.shopify.com/s/files/1/2451/8571/products/Unflavored-4-Delicious-Flavors_40x40@2x.png?v=1657121683">
+            </div>
+            <div class="carousel-cell">
+              <img class="w3-image"
+                src="https://cdn.shopify.com/s/files/1/2451/8571/products/collagen-unflavored-5.17.21_40x40@2x.png?v=1657121683">
+            </div>
+            <div class="carousel-cell">
+              <img class="w3-image"
+                src="https://cdn.shopify.com/s/files/1/2451/8571/products/collagen-flavors-chocolate_40x40@2x.png?v=1657121683">
+            </div>
+            <div class="carousel-cell">
+              <img class="w3-image"
+                src="https://cdn.shopify.com/s/files/1/2451/8571/products/collagen-unf-sq_40x40@2x.png?v=1657121683">
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+  <!-- horizontal line -->
+  <div class="container-fluid" style="background-color:rgb(13, 79, 154); padding: 2px;">
+  </div>
+
+
+
+  <!-- listing items div  -->
+  <div class="container-fluid p-5 lh-2" style="color: #333333">
+
+
+    <h2 class="mb-4 fs-4" style="letter-spacing: 2px;">The No-Clump Collagen Protein Powder</h2>
+
+    <strong>Ageless Multi-Collagen Provides You 5 Types of Collagen to Support:</strong>
+    <ul class="mb-3">
+      <li>Healthy Skin, Hair, and NailsFootnote†</li>
+      <li>Gut, Joint, and Bone HealthFootnote†</li>
+      <li>Athletic Performance, Recovery, and an Active LifestyleFootnote†</li>
+    </ul>
+
+    <strong>Plus, Every Serving of Ageless Multi-Collagen is:</strong>
+    <ul>
+      <li>Loaded with 10 Grams of Collagen Protein (per serving) including BioActive Collagen Peptides</li>
+      <li>A Complete Protein Source Featuring 140mg of Tryptophan</li>
+      <li>Tasteless and Odorless or Available in Delicious Flavors</li>
+      <li>Mixes Instantly WITHOUT Clumps (in hot or cool liquids)</li>
+    </ul>
+  </div>
+
+
+
+  <!-- equal width 4 div  -->
+
+  <div class="d-md-flex d-none bg-white text-center text-white">
+
+    <div class="col-md-3 d-md-block" style="background-color: rgb(0, 54, 99); position: relative; margin-right: 2px;">
+      <div class="team_img">
+        <img src="https://cdn.shopify.com/s/files/1/0009/2900/5634/files/60-day-money-back-guarantee.png?33286"
+          alt="logo">
+      </div>
+      <p class="mt-5">60-DAY MONEY BACK GUARANTEE</p>
+    </div>
+
+
+    <div class="col-md-3 d-md-block" style="background-color: rgb(0, 54, 99); position: relative; margin-right: 2px;">
+      <div class="team_img">
+        <img src="https://cdn.shopify.com/s/files/1/0009/2900/5634/files/Complete_-5-Collagen-Protein.png?33316"
+          alt="logo">
+      </div>
+      <p class="mt-5">COMPLETE, 5-COLLAGEN PROTIEN</p>
+    </div>
+
+
+    <div class="col-md-3 d-md-block " style="background-color: rgb(0, 54, 99); position: relative; margin-right: 2px;">
+      <div class="team_img">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0009/2900/5634/files/Hormone_-Glutena-and-Soy-Free_0cfd5c3d-c8a2-4659-ba48-bd631a05e7e5.png?347326"
+          alt="logo">
+      </div>
+      <p class="mt-5">HORMONE & GLUTEN-FREE & NON-GMO</p>
+    </div>
+
+
+    <div class="col-md-3 d-md-block" style="background-color: rgb(0, 54, 99); position: relative;">
+      <div class="team_img">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0009/2900/5634/files/never-clumps_609b1d6f-1c62-4cb9-8fe5-725c0dc114bb.png?34732"
+          alt="logo">
+      </div>
+      <p class="mt-5">NEVER CLUMPS</p>
+    </div>
+  </div>
+
+  <div class="text-center d-block d-md-none text-white py-3" style="background-color: #003663;">
+    <div class="d-flex">
+      <div class="w-50">
+        <img src="https://cdn.shopify.com/s/files/1/0009/2900/5634/files/60-day-money-back-guarantee.png?33286"
+          height="60px" width="60px" alt="logo">
+        <p style="font-size: 16px;">60-DAY MONEY BACK GURANTEE</p>
+      </div>
+      <div class="w-50">
+        <img src="https://cdn.shopify.com/s/files/1/0009/2900/5634/files/Complete_-5-Collagen-Protein.png?33316"
+          height="60px" width="60px" alt="logo">
+        <p style="font-size: 16px;">COMPLETE, 5-COLLAGEN PROTIEN</p>
+      </div>
+    </div>
+    <div class="d-flex">
+      <div class="w-50">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0009/2900/5634/files/Hormone_-Glutena-and-Soy-Free_0cfd5c3d-c8a2-4659-ba48-bd631a05e7e5.png?347326"
+          height="60px" width="60px" alt="logo">
+        <p style="font-size: 16px;">HORMONE & GLUTEN-FREE & NON-GMO</p>
+      </div>
+      <div class="w-50">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0009/2900/5634/files/never-clumps_609b1d6f-1c62-4cb9-8fe5-725c0dc114bb.png?34732"
+          height="60px" width="60px" alt="logo">
+        <p style="font-size: 16px;">NEVER CLUMPS</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- last one div  -->
+
+  <div class="d-md-flex py-5 text-center text-md-end d-sm-block" style="background-color: #0D4F9A;">
+    <div class="container">
+      <h3 style="color: #ffffff; font-size: 32px;">
+        FEATURED
+        CUSTOMER
+        REVIEW
+      </h3>
+      <a href="#" style="text-decoration: none; font-size: 22px;color: #2BB34D;">Read more
+        reviews</a>
+
+    </div>
+
+    <div class="d-md-flex d-none" style="height: 200px; background-color: #2BB34D; color: #2BB34D;">
+      <div class="vr d-sm-inline-block" style="color: #2BB34D; width:8px"></div>
+    </div>
+
+    <div class="d-md-none d-block text-center" style="height: 10px; background-color: #2BB34D; color: #2BB34D;">
+      <div class="hr d-sm-inline-block" style="color: #2BB34D;"></div>
+    </div>
+
+
+    <div class="container inlline-block text-center px-5" style="font-size: 24px; color: #ffffff;">
+      <div class="container-fluid"><img
+          src="https://cdn.shopify.com/s/files/1/2451/8571/t/41/assets/featured_review_stars_small.png?v=115086123786708348821631221618"
+          alt="Stars Images" /></div>
+      <p style="color: #ffffff;">
+        "I love it! No taste or smell. I put it in my coffee first thing. Cuts my hunger and gives me energy."</p>
+      <em> Jacqueline T.</em><br />
+      <strong style="color: #2BB34D;"> VERIFIED BUYER</strong>
+      </p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- popover -->
+
+  <!-- <script>
+  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+  })
+</script> -->
+
+  <!-- flickity cdnjs -->
+
+
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+  <!-- font awsome cdn -->
+  <script src="https://kit.fontawesome.com/6034b1f543.js" crossorigin="anonymous"></script>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+
+
+</body>
+
+
+</html>
